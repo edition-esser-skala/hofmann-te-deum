@@ -78,8 +78,6 @@
 		\fill-line {
 			\line {
 				\fontsize #3 {
-	 				\with-color #(rgb-color .8313 0 0) { \fromproperty #'header:number }
-	 			 	\hspace #3
 	 			 	\fromproperty #'header:title
 				}
 				\fromproperty #'header:subtitle
@@ -433,9 +431,9 @@ sbOff = {
     (single-bracket grob))))
 
 
-bfbOpen =
+bo =
 \once \override BassFigureBracket.stencil = #(half-bfb LEFT)
-bfbClose =
+bc =
 \once \override BassFigureBracket.stencil = #(half-bfb RIGHT)
 
 
@@ -588,6 +586,12 @@ tocSection = #(define-music-function
 )
 
 tempoTeDeum = \tempoMarkup "Allegro moderato"
+tempoSanctus = \tempoMarkup "Adagio"
+tempoPleni = \tempoMarkup "Allegro"
+tempoTeGloriosus = \tempoMarkup "Allegretto"
+tempoTeErgo = \tempoMarkup "Adagio"
+tempoAeterna = \tempoMarkup "Allegretto"
+tempoInTe = \tempoMarkup "Allegro"
 
 
 \include "notes/clno1.ly"

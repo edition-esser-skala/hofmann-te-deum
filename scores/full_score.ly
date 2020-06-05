@@ -6,20 +6,16 @@
 
 \include "../definitions.ly"
 
-\paper {
-	% #(define (page-post-process layout pages) (ly:create-toc-file layout pages))
-}
+\paper { }
 
 #(set-global-staff-size 15.87)
 
 \book {
 	\bookpart {
 		\header {
-			number = "1"
 			title = "T E   D E U M   L A U D A M U S"
 		}
 		\paper { indent = 3\cm }
-		% \tocSection "1" "Te Deum laudamus"
 		\score {
 			<<
 				\new StaffGroup <<
