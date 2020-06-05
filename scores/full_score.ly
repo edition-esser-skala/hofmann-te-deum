@@ -13,7 +13,7 @@
 \book {
 	\bookpart {
 		\header {
-			title = "T E   D E U M   L A U D A M U S"
+			title = "T E   D E U M"
 		}
 		\paper { indent = 3\cm }
 		\score {
