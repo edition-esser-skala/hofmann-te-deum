@@ -59,7 +59,7 @@ TeDeumBassoNotes = {
 		R2.*2
 		r4 a' a
 		g g g %65
-		f f d
+		f d^\critnote d
 		gis2 gis8 gis
 		a4 c, e
 		a( a,8[ h)] c([ d)]
