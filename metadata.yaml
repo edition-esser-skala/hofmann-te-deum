@@ -1,17 +1,19 @@
 composer: Hofmann, Leopold
 title: Te Deum
-id: (A-Ed C 10)
 genre: hymn
 scoring: S, A, T, B (coro), 2 clno (C), timp (C–G), 2 vl, b, org solo
 sources:
-  1:
+  B1:
     siglum: A-Ed
     shelfmark: G 10
-    type: manuscript copy
-    date: unknown
     rism: 600038250
     url: http://dommusikarchiv.martinus.at/site/werkverzeichnis/gallery/62.html
-github: hofmann-te-deum-in-C
+    primary: true
 imslp: Te_Deum_Laudamus_(Hofmann,_Leopold)
-notes:
-
+parts:
+  ottoni: Clarino I, II in C\\Timpani in C–G
+  vl1: Violino I
+  vl2: Violino II
+  coro: Coro
+  org: Organo solo
+  b: Bassi
