@@ -1,14 +1,12 @@
 \version "2.22.0"
 
 \include "../definitions.ly"
-
-#(set-global-staff-size 15.87)
+\include "score_settings/full-score.ly"
 
 \book {
   \bookpart {
-    \header {
-      title = "T E   D E U M"
-    }
+    \section "Te Deum"
+    \addTocEntry
     \paper { indent = 3\cm }
     \score {
       <<
@@ -37,25 +35,19 @@
         >>
         \new ChoirStaff <<
           \new Staff {
-            \set Staff.instrumentName = \SopranoIncipit
-            \override Staff.InstrumentName.self-alignment-Y = ##f
-            \override Staff.InstrumentName.self-alignment-X = #RIGHT
+            \incipitSoprano
             \new Voice = "Soprano" { \dynamicUp \TeDeumSopranoNotes }
           }
           \new Lyrics \lyricsto Soprano \TeDeumSopranoLyrics
 
           \new Staff {
-            \set Staff.instrumentName = \AltoIncipit
-            \override Staff.InstrumentName.self-alignment-Y = ##f
-            \override Staff.InstrumentName.self-alignment-X = #RIGHT
+            \incipitAlto
             \new Voice = "Alto" { \dynamicUp \TeDeumAltoNotes }
           }
           \new Lyrics \lyricsto Alto \TeDeumAltoLyrics
 
           \new Staff {
-            \set Staff.instrumentName = \TenoreIncipit
-            \override Staff.InstrumentName.self-alignment-Y = ##f
-            \override Staff.InstrumentName.self-alignment-X = #RIGHT
+            \incipitTenore
             \new Voice = "Tenore" { \dynamicUp \TeDeumTenoreNotes }
           }
           \new Lyrics \lyricsto Tenore \TeDeumTenoreLyrics
@@ -67,7 +59,7 @@
           \new Lyrics \lyricsto Basso \TeDeumBassoLyrics
         >>
         \new PianoStaff <<
-          \set PianoStaff.instrumentName = \markup { \center-column { "Organo" "solo" } }
+          \set PianoStaff.instrumentName = \markup \center-column { "Organo" "solo" }
           \new Staff { \TeDeumOrganoR }
           \new Staff { \TeDeumOrganoL }
         >>

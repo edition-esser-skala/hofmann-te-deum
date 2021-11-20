@@ -8,12 +8,8 @@ sources:
     shelfmark: C 10
     rism: 600038250
     url: http://dommusikarchiv.martinus.at/site/werkverzeichnis/gallery/62.html
-    primary: true
+    principal: true
 imslp: Te_Deum_Laudamus_(Hofmann,_Leopold)
 parts:
   ottoni: Clarino I, II in C\\Timpani in C–G
-  vl1: Violino I
-  vl2: Violino II
-  coro: Coro
   org: Organo solo
-  b: Bassi
