@@ -12,12 +12,12 @@
       <<
         \new StaffGroup <<
           \new Staff <<
-            \set StaffGroup.instrumentName = \markup \center-column { "Clarino I, II" "in C" }
+            \set StaffGroup.instrumentName = \transposedName "Clarino I, II" "C" ""
             \partCombine \TeDeumClarinoI \TeDeumClarinoII
           >>
         >>
         \new Staff {
-          \set Staff.instrumentName = \markup \center-column { "Timpani" "in C–G" }
+          \set Staff.instrumentName = \transposedTimp "C" "" "G" ""
           \TeDeumTimpani
         }
         \new StaffGroup <<
