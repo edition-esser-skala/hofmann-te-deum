@@ -1,13 +1,17 @@
-composer: Hofmann, Leopold
+composer:
+  last: Hofmann
+  first: Leopold
 title: Te Deum
 genre: hymn
 scoring: S, A, T, B (coro), 2 clno (C), timp (C–G), 2 vl, b, org solo
+license: cc-by-sa-4.0
 sources:
   B1:
     siglum: A-Ed
     shelfmark: C 10
     rism: 600038250
     url: http://dommusikarchiv.martinus.at/site/werkverzeichnis/gallery/62.html
+    license: public domain
     principal: true
 imslp: Te_Deum_Laudamus_(Hofmann,_Leopold)
 parts:
